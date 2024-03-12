@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating the Website content</title>
+    <script src="jQuery.js"></script>
+</head>
+
+<body>
+    <p class="para">My name is Gaurav</p>
+    <iframe src="https://www.wikipedia.org/" frameborder="0" width="400px" height="400px"></iframe>
+
+    <script>
+        $(".para").click(function () {
+            $(".para").html($(".para").html() + " Juneja")
+        })
+        $("iframe").hover(function () {
+            $("iframe").attr("src", "https://bbc.com/")
+            $("iframe").attr("width", "50%")
+        })
+    </script>
+</body>
+
+</html>

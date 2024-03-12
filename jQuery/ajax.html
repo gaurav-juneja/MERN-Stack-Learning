@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expresion</title>
+</head>
+
+<body>
+    <script>
+        var eg = "This is just just just an Example"
+        var find = /Just/ig
+        //Here "i" is used to avoid the Case-Sensitivity and "g" is used to show the repitition of the word in a string.
+        var result = eg.match(find);
+        alert(result)
+        var result2 = eg.replace(find, "Bla");
+        alert(result2)
+    </script>
+</body>
+
+</html>

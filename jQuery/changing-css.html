@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Web Styles</title>
+    <script src="jQuery.js"></script>
+    <style>
+        .d_flex {
+            display: flex;
+        }
+
+        .circle {
+            width: 200px;
+            height: 200px;
+            background-color: magenta;
+            border-radius: 50%;
+        }
+
+        .rect {
+            width: 300px;
+            height: 200px;
+            background-color: cyan;
+            margin-top: 10px;
+        }
+
+        .square {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="circle"></div>
+    <div class="rect"></div>
+    <div class="square"></div>
+
+    <script>
+        $("div").click(function () {
+            $(this).css("display", "none");
+        });
+    </script>
+</body>
+
+</html>

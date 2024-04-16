@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draggable</title>
+    <script src="./jQuery.js"></script>
+    <script src="jquery-ui-1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="jquery-ui-1.13.2/jquery-ui.css">
+
+    <style>
+        #drag {
+            border: 1px solid black;
+            padding: 2rem;
+            border-radius: 20px;
+            width: 10%;
+            display: inline-block;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id='drag'>
+        <p>Drag me!</p>
+    </div>
+    <script>
+        $("#drag").draggable();
+
+        // If we want to drag in a particular direction
+        // $("#drag").draggable({ axis: "x" });
+        // $("#drag").draggable({ axis: "y" });
+    </script>
+</body>
+
+</html>
